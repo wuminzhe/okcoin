@@ -1,8 +1,8 @@
-# Okcoin
+# okcoin.cn Rest Api Ruby Wrapper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/okcoin`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并且现有的其他ruby多没有更新或者是国际站的实现，所以决定自己写一个。    
+1. 保持跟踪最新的api
+2. 名字等细节尽量与okcoin.cn保持一致，目前所有的api都完全和官方文档一致
 
 ## Installation
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/okcoin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wuminzhe/okcoin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
