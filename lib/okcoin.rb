@@ -1,5 +1,5 @@
 require "okcoin/version"
-require "okcoin/rest_api"
+require "okcoin/client"
 
 def logger
   if $logger.nil?

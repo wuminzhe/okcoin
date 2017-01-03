@@ -1,7 +1,7 @@
-require 'base'
+require './base'
 
 module Okcoin
-  class Client < Okcoin::Base
+  class Client < Base
     # 行情 API
     define_get_api :ticker, :depth, :trades, :kline
 

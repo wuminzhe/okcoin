@@ -3,8 +3,8 @@ require "uri"
 require "json"
 require "logger"
 require "digest/md5"
-require "http_utils"
-require "api_define_tool"
+require "./http_utils"
+require "./api_define_tool"
 
 module Okcoin
 
