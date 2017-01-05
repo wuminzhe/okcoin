@@ -9,6 +9,12 @@ require "okcoin/api_define_tool"
 require 'okcoin/base'
 require "okcoin/client"
 
+class Object
+  def blank?
+    respond_to?(:empty?) ? !!empty? : !self
+  end
+end
+
 module Okcoin
   def self.logger
     if $logger.nil?
@@ -17,10 +23,4 @@ module Okcoin
     end
     return $logger
   end
-
-  class Object
-	  def blank?
-	    respond_to?(:empty?) ? !!empty? : !self
-	  end
-	end
 end
