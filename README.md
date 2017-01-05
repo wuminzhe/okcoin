@@ -34,7 +34,7 @@ require 'okcoin'
 Okcoin::logger.level = Logger::DEBUG
 
 
-client = Okcoin::Client.new url: api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
+client = Okcoin::Client.new api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
 # or
 # 连国际站，设置url
 # client = Okcoin::Client.new url: 'https://www.okcoin.com/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
