@@ -27,8 +27,14 @@ gem 'okcoin'
 ## 使用
 
 ```ruby
+require 'okcoin'
+
+# 如果要看详细的访问情况，把日志级别设置为debug
+Okcoin::logger.level = Logger::DEBUG
+
 # url可选，默认就是https://www.okcoin.cn/api/，后面两个必选
 client = Okcoin::Client.new url: 'https://www.okcoin.cn/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
+
 client.ticker(symbol: "btc_cny")
 client.trades(symbol: 'btc_cny', since: nil)
 ```

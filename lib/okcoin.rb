@@ -9,15 +9,15 @@ require "okcoin/api_define_tool"
 require 'okcoin/base'
 require "okcoin/client"
 
-def logger
-  if $logger.nil?
-    $logger = Logger.new(STDOUT)
-    $logger.level = Logger::DEBUG
-  end
-  return $logger
-end
-
 module Okcoin
+  def self.logger
+    if $logger.nil?
+      $logger = Logger.new(STDOUT)
+      $logger.level = Logger::WARN
+    end
+    return $logger
+  end
+
   class Object
 	  def blank?
 	    respond_to?(:empty?) ? !!empty? : !self
