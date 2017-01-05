@@ -35,11 +35,11 @@ Okcoin::logger.level = Logger::DEBUG
 # url可选，默认就是https://www.okcoin.cn/api/，后面两个必选
 client = Okcoin::Client.new url: 'https://www.okcoin.cn/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
 
-client.ticker(symbol: "btc_cny")
-client.trades(symbol: 'btc_cny', since: nil)
+result = client.ticker(symbol: "btc_cny")
+result = client.trades(symbol: 'btc_cny', since: nil)
 ```
 
-结果以ruby数据格式表达。
+结果以ruby数据格式返回。
 
 更多接口详情，请查看[okcoin官方文档](https://www.okcoin.cn/rest_getStarted.html)。
 
