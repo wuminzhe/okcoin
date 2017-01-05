@@ -1,31 +1,34 @@
-# okcoin.cn Rest Api Ruby Wrapper
+# 币行中国站接口 Ruby 实现
 
-okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并且其他ruby实现都没有更新或者是国际站的实现，所以决定自己写一个。
-​    
-	1. 保持跟踪最新的api
+okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并且其他ruby实现都没有更新或者是国际站的实现，所以决定自己写一个，目前实现了全部Rest API。
 
-	2. 名字等细节尽量与okcoin.cn保持一致，目前所有的api都完全和官方文档一致
+1. 保持跟踪最新的api
 
-## Installation
 
-Add this line to your application's Gemfile:
+2. 名字等细节尽量与okcoin.cn保持一致，目前所有的api都完全和官方文档一致
+
+
+## 安装
+
+把下面这行加到你的 Gemfile里面:
 
 ```ruby
 gem 'okcoin'
 ```
 
-And then execute:
+然后执行命令:
 
     $ bundle
 
-Or install it yourself as:
+当然，你也可以手工安装:
 
     $ gem install okcoin
 
-## Usage
+## 使用
 
 ```ruby
-client = Okcoin::Client.new 'https://www.okcoin.cn/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
+# url可选，默认就是https://www.okcoin.cn/api/，后面两个必选
+client = Okcoin::Client.new url: 'https://www.okcoin.cn/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
 client.ticker(symbol: "btc_cny")
 client.trades(symbol: 'btc_cny', since: nil)
 ```
@@ -35,6 +38,8 @@ client.trades(symbol: 'btc_cny', since: nil)
 更多接口详情，请查看[okcoin官方文档](https://www.okcoin.cn/rest_getStarted.html)。
 
 ## Contributing
+
+如果有问题给我发邮件：wuminzhe@126.com，也是我的支付宝账号😆
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/wuminzhe/okcoin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 

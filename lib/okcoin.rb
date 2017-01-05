@@ -1,4 +1,12 @@
 require "okcoin/version"
+require "net/http"
+require "uri"
+require "json"
+require "logger"
+require "digest/md5"
+require "okcoin/http_utils"
+require "okcoin/api_define_tool"
+require 'okcoin/base'
 require "okcoin/client"
 
 def logger

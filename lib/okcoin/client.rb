@@ -1,5 +1,3 @@
-require './base'
-
 module Okcoin
   class Client < Base
     # 行情 API

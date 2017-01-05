@@ -1,18 +1,10 @@
-require "net/http"
-require "uri"
-require "json"
-require "logger"
-require "digest/md5"
-require "./http_utils"
-require "./api_define_tool"
-
 module Okcoin
 
   class Base
     include HttpUtils
     extend ApiDefineTool
 
-    def initialize(url,api_key,secret_key)
+    def initialize(url: 'https://www.okcoin.cn/api/', api_key:, secret_key:)
       @url = url
       @api_key = api_key
       @secret_key = secret_key
