@@ -39,8 +39,12 @@ client = Okcoin::Client.new api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKC
 # 连国际站，设置url
 # client = Okcoin::Client.new url: 'https://www.okcoin.com/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
 
-result = client.ticker(symbol: "btc_cny")
+result = client.ticker(symbol: 'btc_cny')
 result = client.trades(symbol: 'btc_cny', since: nil)
+
+# 请求参数中的api_key和sign不需要填
+# post类型的交易API都是这种，比如trade
+result = client.trade(symbol: 'btc_cny', type: 'buy', price: 6666, amount: 0.1)
 ```
 
 结果以ruby数据格式返回。
