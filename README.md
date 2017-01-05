@@ -1,6 +1,6 @@
-# 币行中国站接口 Ruby 实现
+# 币行接口 Ruby 实现
 
-okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并且其他ruby实现都没有更新或者是国际站的实现，所以决定自己写一个，目前实现了全部Rest API。
+okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并且其他ruby实现都没有更新或者是国际站的实现，所以决定自己写一个，目前实现了全部Rest API，支持国际站。
 
 1. 保持跟踪最新的api
 
@@ -33,8 +33,11 @@ require 'okcoin'
 # 如果要看详细的访问情况，把日志级别设置为debug
 Okcoin::logger.level = Logger::DEBUG
 
-# url可选，默认就是https://www.okcoin.cn/api/，后面两个必选
-client = Okcoin::Client.new url: 'https://www.okcoin.cn/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
+
+client = Okcoin::Client.new url: api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
+# or
+# 连国际站，设置url
+# client = Okcoin::Client.new url: 'https://www.okcoin.com/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
 
 result = client.ticker(symbol: "btc_cny")
 result = client.trades(symbol: 'btc_cny', since: nil)
