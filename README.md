@@ -46,7 +46,7 @@ result = client.trades(symbol: 'btc_cny', since: nil)
 
 ## Contributing
 
-如果有问题给我发邮件：wuminzhe@126.com
+我的邮箱：wuminzhe@126.com，QQ：276578497
 
 如果觉得有用，支持点币😆：**19n1AiDnzbnuEJcnwVmuXSUP1dpodBMdHF**
 
