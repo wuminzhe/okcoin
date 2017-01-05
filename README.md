@@ -13,7 +13,7 @@ okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并�
 把下面这行加到你的 Gemfile里面:
 
 ```ruby
-gem 'okcoin'
+gem 'okcoin', '~> 0.1.5'
 ```
 
 然后执行命令:
@@ -23,6 +23,7 @@ gem 'okcoin'
 当然，你也可以手工安装:
 
     $ gem install okcoin
+不要使用0.1.5以前的版本
 
 ## 使用
 
