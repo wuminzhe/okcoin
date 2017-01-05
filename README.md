@@ -45,7 +45,11 @@ result = client.trades(symbol: 'btc_cny', since: nil)
 
 ## Contributing
 
-如果有问题给我发邮件：wuminzhe@126.com，也是我的支付宝账号😆
+如果有问题给我发邮件：wuminzhe@126.com
+
+如果觉得有用，支持点币😆：**19n1AiDnzbnuEJcnwVmuXSUP1dpodBMdHF**
+
+
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/wuminzhe/okcoin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
