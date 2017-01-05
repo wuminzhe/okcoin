@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Wu Minzhe"]
   spec.email         = ["wuminzhe@gmail.com"]
 
-  spec.summary       = %q{Ruby wrapper for rest api of okcoin.cn}
-  spec.description   = %q{名字等细节尽量与okcoin.cn保持一致，并包括最新的api}
+  spec.summary       = %q{A ruby wrapper for okcoin.cn}
+  spec.description   = %q{A ruby wrapper for okcoin.cn}
   spec.homepage      = "https://github.com/wuminzhe/okcoin"
   spec.license       = "MIT"
 
