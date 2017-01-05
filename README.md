@@ -3,6 +3,7 @@
 okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并且其他ruby实现都没有更新或者是国际站的实现，所以决定自己写一个。
 ​    
 	1. 保持跟踪最新的api
+
 	2. 名字等细节尽量与okcoin.cn保持一致，目前所有的api都完全和官方文档一致
 
 ## Installation
@@ -24,7 +25,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-client = Okcoin::Client.new api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
+client = Okcoin::Client.new 'https://www.okcoin.cn/api/', api_key: 'YOUR_OKCOIN_APIKEY', secret_key: 'YOUR_OKCOIN_SECRET'
 client.ticker(symbol: "btc_cny")
 client.trades(symbol: 'btc_cny', since: nil)
 ```
