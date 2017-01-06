@@ -13,7 +13,7 @@ okcoin.cn的Rest Api很简单易懂，但是官方并有提供ruby实现，并�
 把下面这行加到你的 Gemfile里面:
 
 ```ruby
-gem 'okcoin', '~> 0.1.5'
+gem 'okcoin', '~> 0.1.6'
 ```
 
 然后执行命令:
