@@ -55,7 +55,7 @@ result = client.trade(symbol: 'btc_cny', type: 'buy', price: 6666, amount: 0.1)
 
 我的邮箱：wuminzhe@126.com
 
-如果觉得有用，支持点币😆：**19n1AiDnzbnuEJcnwVmuXSUP1dpodBMdHF**
+如果觉得有用，支持点莱特币😆：**LNSCcFhapH6RGckvuyXYPJBwMeaA1pMBVb**
 
 
 
